@@ -1,10 +1,15 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-    selector: "app-server",
-    templateUrl: "./server.component.html"
+  selector: 'app-server',
+  templateUrl: './server.component.html',
 })
 export class ServerComponent {
-    name = "Rita"
-    sentimento= "Amo"
+  name = '';
+  sentimento = '';
+
+  constructor() {
+    this.sentimento = 'amo';
+    this.name = 'Rita';
+  }
 }
