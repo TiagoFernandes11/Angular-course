@@ -9,6 +9,7 @@ export class ServersComponent {
   allowNewEntry = true;
   entryCreationStatus = "No entry was created!"
   entryName="Test Name"
+  entryCreated = false;
 
   constructor () {
     setTimeout(() => {
@@ -17,6 +18,7 @@ export class ServersComponent {
   }
 
   onCreatedEntry(){
+    this.entryCreated = true;
     this.entryCreationStatus = "Server was created! Name is " + this.entryName
   }
 }
