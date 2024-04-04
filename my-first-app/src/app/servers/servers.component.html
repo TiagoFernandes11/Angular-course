@@ -1,12 +1,11 @@
 <label>Server Name</label>
 <input type="text" class="form-control" [(ngModel)]="entryName">
-<p>{{entryName}}</p>
 <button
   class="btn btn-primary"
   [disabled]="allowNewEntry"
   (click)="onCreatedEntry()"
 >
-  Add Entry
+Add Entry
 </button>
 <p>{{ entryCreationStatus }}</p>
 <app-server />

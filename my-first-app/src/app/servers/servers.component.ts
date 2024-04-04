@@ -17,6 +17,6 @@ export class ServersComponent {
   }
 
   onCreatedEntry(){
-    this.entryCreationStatus = "Server was created!"
+    this.entryCreationStatus = "Server was created! Name is " + this.entryName
   }
 }
