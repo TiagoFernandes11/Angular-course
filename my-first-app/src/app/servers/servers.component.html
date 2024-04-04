@@ -11,4 +11,4 @@
   Entry was created, entry name is {{ entryName }}
 </p>
 <ng-template #noEntry><p>No entry was created</p></ng-template>
-<app-server />
+<app-server *ngFor="let server of servers">Server of servers</app-server>

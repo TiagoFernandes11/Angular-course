@@ -10,6 +10,7 @@ export class ServersComponent {
   entryCreationStatus = "No entry was created!"
   entryName="Test Name"
   entryCreated = false;
+  servers = ["Testserver", "testServer2", "test3"];
 
   constructor () {
     setTimeout(() => {
@@ -19,6 +20,7 @@ export class ServersComponent {
 
   onCreatedEntry(){
     this.entryCreated = true;
+    this.servers.push(this.entryName)
     this.entryCreationStatus = "Server was created! Name is " + this.entryName
   }
 }
