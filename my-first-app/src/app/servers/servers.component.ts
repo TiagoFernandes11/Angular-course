@@ -7,10 +7,20 @@ import { Component } from '@angular/core';
 })
 export class ServersComponent {
   allowNewEntry = true;
+  entryCreationStatus = "No entry was created!"
+  entryName=""
 
   constructor () {
     setTimeout(() => {
       this.allowNewEntry = false
     }, 2000)
+  }
+
+  onCreatedEntry(){
+    this.entryCreationStatus = "Server was created!"
+  }
+
+  onUpdateEntryName(event){
+    this.entryName = (<HTMLInputElement>event.target).value;
   }
 }

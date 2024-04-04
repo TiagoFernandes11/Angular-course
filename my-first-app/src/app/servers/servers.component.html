@@ -1,2 +1,12 @@
-<button class="btn btn-primary" [disabled]="allowNewEntry">Add Entry</button>
+<label>Server Name</label>
+<input type="text" class="form-control" (input)="onUpdateEntryName($event)"/>
+<p>{{entryName}}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="allowNewEntry"
+  (click)="onCreatedEntry()"
+>
+  Add Entry
+</button>
+<p>{{ entryCreationStatus }}</p>
 <app-server />
