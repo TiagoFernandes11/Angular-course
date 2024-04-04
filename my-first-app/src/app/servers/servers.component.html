@@ -7,5 +7,8 @@
 >
   Add Entry
 </button>
-<p *ngIf="entryCreated">Entry was created, entry name is {{ entryName }}</p>
+<p *ngIf="entryCreated; else noEntry">
+  Entry was created, entry name is {{ entryName }}
+</p>
+<ng-template #noEntry><p>No entry was created</p></ng-template>
 <app-server />
