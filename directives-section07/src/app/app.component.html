@@ -10,7 +10,9 @@
           class="list-group-item"
           *ngFor="let number of numbers"
           [ngClass]="{ odd: number % 2 !== 0 }"
-          [ngStyle]="{ backgroundColor: number % 2 !== 0 ? 'yellow' : 'blue' }"
+          [ngStyle]="{
+            backgroundColor: number % 2 !== 0 ? '#ececec' : '#9fd3c7'
+          }"
         >
           {{ number }}
         </li>
