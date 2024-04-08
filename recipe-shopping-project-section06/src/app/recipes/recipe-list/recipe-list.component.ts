@@ -11,14 +11,19 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
   recipes: Recipe[] = [
     new Recipe(
-      'A Test Recipe',
-      'This is simply a test',
-      'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'
+      'Yeshua is the Lord',
+      'Yeshua is the Lord',
+      'https://jornaldacidadegv.com.br/wp-content/uploads/2024/01/Jesus_Cristo.webp'
     ),
     new Recipe(
-      'A Test Recipe',
-      'This is simply a test',
-      'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'
+      'Yeshua is the Lord',
+      'Yeshua is the Lord',
+      'https://cdn.pixabay.com/photo/2023/10/21/02/19/ai-generated-8330558_1280.jpg'
+    ),
+    new Recipe(
+      'Yeshua is the Lord',
+      'Yeshua is the Lord',
+      'https://static.vecteezy.com/ti/fotos-gratis/p2/24401816-a-sofrimentos-do-jesus-cristo-dentro-a-coroa-do-espinhos-ai-gerativ-gratis-foto.jpg'
     ),
   ];
 
