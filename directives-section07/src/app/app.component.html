@@ -19,9 +19,9 @@
       </ul>
       <p appBasicHighlight>Style me with basic directive!</p>
       <p appBetterHighlight>Style me with a Better directive!</p>
-      <ng-template [ngIf]="onlyOdd">
-        <p>Only odd</p>
-      </ng-template>
+      <div *appUnless="!onlyOdd">
+        <h1>Only odd</h1>
+      </div>
     </div>
   </div>
 </div>
